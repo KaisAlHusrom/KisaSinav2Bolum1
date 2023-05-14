@@ -11,7 +11,7 @@
 #define INF INT_MAX
 
 void generate(int a[], int size);
-void function1(int a[], int size);
+void quickSort(int a[], int left, int right);
 int function2(int a[], int size);
 void function3(int g[][G_SIZE], int d[][G_SIZE], int size);
 void print1(int a[], int size);
@@ -48,7 +48,7 @@ int main() {
     printf("A:\n");
     print1(a, A_SIZE);
 
-    function1(a, A_SIZE);
+    quickSort(a, 0, A_SIZE -1);
     printf("\nFunction1 Sonuc:\n");
     print1(a, A_SIZE);
 
